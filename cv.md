@@ -9,9 +9,9 @@ I want to became a good web developer. I hope that my work will bring me pleasur
 * HTML
 * CSS
 * JS
-* C++
+* C++  
 ## Code examples  
-```javascript    
+`````javascript    
 const inputArray = () => {
 	for(let i = 0; i < n; i++) {
 		array[i] = parseFloat(prompt(`Введите ${i+1} элемент массива`));
@@ -74,4 +74,4 @@ console.log('Отсортированный массив: ' + array);
 console.log('Сумма: ' + sumOfElements());
 console.log('Минимальный элемент: ' + array[0]);
 console.log('Максимальный элемент: ' + array[n - 1]);
-```
+`````
