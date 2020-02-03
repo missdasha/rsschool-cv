@@ -9,12 +9,12 @@ I want to became a good web developer. I hope that my work will bring me pleasur
 * HTML
 * CSS
 * JS
-* C++  
-## Code examples  
-`````javascript    
+* C++   
+## Code examples    
+```javascript        
 const inputArray = () => {
 	for(let i = 0; i < n; i++) {
-		array[i] = parseFloat(prompt(`Введите ${i+1} элемент массива`));
+		array[i] = parseFloat(prompt(`Input ${i+1} element of array`));
 		console.log(array[i]);
 	}
 }
@@ -64,14 +64,18 @@ const maximum = () => {
 	return max;
 };
 
-const n = prompt('Сколько элементов будет в массиве?');
+const n = prompt('How many elements will be in the array?');
 console.log(n);
 let array = [];
 inputArray();
-console.log('Исходный массив: ' + array);
+console.log('Initial array: ' + array);
 selectSort();
-console.log('Отсортированный массив: ' + array);
-console.log('Сумма: ' + sumOfElements());
-console.log('Минимальный элемент: ' + array[0]);
-console.log('Максимальный элемент: ' + array[n - 1]);
-`````
+console.log('Ordered array: ' + array);
+console.log('SUm: ' + sumOfElements());
+console.log('Minimum element: ' + array[0]);
+console.log('Maximum element: ' + array[n - 1]);   
+```            
+## Experience   
+YouTube-lessons, [Codecademy](https://www.codecademy.com/learn/paths/web-development), classes at the University.   
+## Education   
+BSU MMF, [Codecademy](https://www.codecademy.com/learn/paths/web-development).
