@@ -11,50 +11,69 @@ I want to became a good web developer. I hope that my work will bring me pleasur
 * JS
 * C++
 ## Code examples
-~~~
-var students = [
-   {"Name": "Darya", "Age": 19, "AverageMark": 7.8 },
-   {"Name":"Polina", "Age": 19, "AverageMark": 7.5},
-   {"Name":"Kseniya", "Age": 18, "AverageMark": 3}];   
-   
-   function StudentsTable(props) {
-      let rows = [];
-  		let students = props.students;
-  		
-  		for (let i = 0; i < students.length; i++) {
-  			rows.push(<StudentRow student = {students[i]} index = {i} />);
-  		}
-  		
-     	return <table>
-             <tr><th>Name</th><th>Age</th><th>AverageMark</th></tr>
-             {rows}
-            	</table>;
-   }
-   
-   function StudentRow(props) {
-  		let student = props.student;
-      let index = props.index;
+```
+const inputArray = () => {
+	for(let i = 0; i < n; i++) {
+		array[i] = parseFloat(prompt(`Введите ${i+1} элемент массива`));
+		console.log(array[i]);
+	}
+}
 
-      function studentStyles() {
-         return (index % 2 == 0) ? "pink" : "#8B9498";
-      }
+const selectSort = () => {
+	for (let i = 0; i < n - 1; i++)
+	{
+		let ind = i;
+		let min = array[i];
+		for (let j = i + 1; j < n; j++)
+		{
+			if (array[j] < min)
+			{
+				[ind, min] = [j, array[j]];
+			}
+		}
+		if (ind != i)
+		{
+			[array[i],array[ind]] = [array[ind],array[i]];
+		}
+	}
+};
 
-      function checkAverage() {
-          if(student.AverageMark < 4)
-            return "red";
-      }
+const sumOfElements = () => {
+	let sum = 0;
+	for (let i = 0; i < n; i++) {
+		sum += array[i];
+	}
+	return sum;
+};
 
-  		return <tr style = {{backgroundColor:studentStyles()}} >
-  				<td>{student.Name}</td>
-  				<td>{student.Age}</td>
-  				<td style = {{color:checkAverage()}}>{student.AverageMark}</td>
-  			  </tr>;
-   }
-   
-   ReactDOM.render(
-        <StudentsTable students = {students} />,
-        document.getElementById("app")
-    )
+const minimum = () => {
+	let min = array[0];
+	for (let i = 0; i < n; i++){
+		if (array[i] < min)
+			min = array[i];
+	}
+	return min;
+};
 
-~~~
+const maximum = () => {
+	let max = array[0];
+	for (let i = 0; i < n; i++){
+		if (array[i] > max)
+			max = array[i];
+	}
+	return max;
+};
+
+const n = prompt('Сколько элементов будет в массиве?');
+console.log(n);
+let array = [];
+inputArray();
+console.log('Исходный массив: ' + array);
+selectSort();
+console.log('Отсортированный массив: ' + array);
+console.log('Сумма: ' + sumOfElements());
+console.log('Минимальный элемент: ' + array[0]);
+console.log('Максимальный элемент: ' + array[n - 1]);
+
+```
 
