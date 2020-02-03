@@ -11,71 +11,17 @@ I want to became a good web developer. I hope that my work will bring me pleasur
 * JS
 * C++   
 ## Code examples    
-```javascript        
+```         
 const inputArray = () => {
 	for(let i = 0; i < n; i++) {
 		array[i] = parseFloat(prompt(`Input ${i+1} element of array`));
 		console.log(array[i]);
 	}
-}
-
-const selectSort = () => {
-	for (let i = 0; i < n - 1; i++)
-	{
-		let ind = i;
-		let min = array[i];
-		for (let j = i + 1; j < n; j++)
-		{
-			if (array[j] < min)
-			{
-				[ind, min] = [j, array[j]];
-			}
-		}
-		if (ind != i)
-		{
-			[array[i],array[ind]] = [array[ind],array[i]];
-		}
-	}
-};
-
-const sumOfElements = () => {
-	let sum = 0;
-	for (let i = 0; i < n; i++) {
-		sum += array[i];
-	}
-	return sum;
-};
-
-const minimum = () => {
-	let min = array[0];
-	for (let i = 0; i < n; i++){
-		if (array[i] < min)
-			min = array[i];
-	}
-	return min;
-};
-
-const maximum = () => {
-	let max = array[0];
-	for (let i = 0; i < n; i++){
-		if (array[i] > max)
-			max = array[i];
-	}
-	return max;
-};
-
-const n = prompt('How many elements will be in the array?');
-console.log(n);
-let array = [];
-inputArray();
-console.log('Initial array: ' + array);
-selectSort();
-console.log('Ordered array: ' + array);
-console.log('SUm: ' + sumOfElements());
-console.log('Minimum element: ' + array[0]);
-console.log('Maximum element: ' + array[n - 1]);   
+}    
 ```            
 ## Experience   
 YouTube-lessons, [Codecademy](https://www.codecademy.com/learn/paths/web-development), classes at the University.   
 ## Education   
-BSU MMF, [Codecademy](https://www.codecademy.com/learn/paths/web-development).
+BSU MMF, [Codecademy](https://www.codecademy.com/learn/paths/web-development).   
+## English  
+Pre-Intermediate(A2). I keep learning English.
