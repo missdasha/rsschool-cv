@@ -11,7 +11,7 @@ I want to became a good web developer. I hope that my work will bring me pleasur
 * JS
 * C++
 ## Code examples  
-```javascript
+```javascript    
 const inputArray = () => {
 	for(let i = 0; i < n; i++) {
 		array[i] = parseFloat(prompt(`Введите ${i+1} элемент массива`));
