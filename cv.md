@@ -9,7 +9,7 @@ I want to became a good web developer. I hope that my work will bring me pleasur
 * HTML
 * CSS
 * JS
-* C++   
+* C++    
 ## Code examples    
 ```         
 const inputArray = () => {
@@ -23,5 +23,5 @@ const inputArray = () => {
 YouTube-lessons, [Codecademy](https://www.codecademy.com/learn/paths/web-development), classes at the University.   
 ## Education   
 BSU MMF, [Codecademy](https://www.codecademy.com/learn/paths/web-development).   
-## English  
-Pre-Intermediate(A2). I keep learning English.
+## English   
+Pre-Intermediate(A2). I keep learning English at the University.
